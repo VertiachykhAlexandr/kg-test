@@ -15,7 +15,7 @@ const selectWrap = document.querySelector(".form__select");
 inputField.addEventListener("click", () => {
   dropdown.classList.add("open");
   selectWrap.classList.add("active");
-  selectImage.src = "../assets/images/arrow-white.png";
+  selectImage.src = "assets/images/arrow-white.png";
   dropdownArray.forEach((dropdown) => {
     dropdown.classList.remove("closed");
   });
@@ -28,7 +28,7 @@ dropdownArray.forEach((item) => {
     inputField.value = item.textContent;
     dropdownArray.forEach((dropdown) => {
       dropdown.classList.add("closed");
-      selectImage.src = "../assets/images/arrow-dropdown.png";
+      selectImage.src = "assets/images/arrow-dropdown.png";
       selectWrap.classList.remove("active");
     });
   });
@@ -39,7 +39,7 @@ document.addEventListener("click", (evt) => {
   const isInput = inputField.contains(evt.target);
   if (!isDropdown && !isInput) {
     dropdown.classList.remove("open");
-    selectImage.src = "../assets/images/arrow-dropdown.png";
+    selectImage.src = "assets/images/arrow-dropdown.png";
     selectWrap.classList.remove("active");
   }
 });
