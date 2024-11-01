@@ -67,10 +67,10 @@
 #mob-menu__toggle {
   opacity: 0;
 }
-/* стилизуем кнопку */
+
 .mob-menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center; /* центрируем содержимое кнопки */
+  display: flex;
+  align-items: center;
   position: fixed;
   top: 37px;
   right: 37px;
@@ -79,7 +79,7 @@
   cursor: pointer;
   z-index: 1;
 }
-/* добавляем "гамбургер" */
+
 .mob-menu__btn > span,
 .mob-menu__btn > span::before,
 .mob-menu__btn > span::after {
@@ -116,7 +116,7 @@
   background-color: #10101de5;
   transition: all ease 0.3s;
 }
-/* элементы меню */
+
 .mob-menu__link {
   color: #ffffff;
   text-decoration: none;
