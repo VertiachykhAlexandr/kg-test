@@ -613,6 +613,7 @@
 @media screen and (max-width: 600px) {
   .order-section .form__group-file {
     font-size: 14px;
+    height: 15px;
   }
 }
 .order-section .form__group #fileupload {
