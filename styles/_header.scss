@@ -1,0 +1,149 @@
+.header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background-color: #10101de5;
+  height: 100px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  &__logo {
+    font-weight: 800;
+    font-size: 28px;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    @media screen and (max-width: 440px) {
+      font-size: 20px;
+    }
+  }
+
+  &__menu {
+    max-width: 435px;
+    width: 100%;
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+    &-list {
+      display: flex;
+      justify-content: space-between;
+
+      width: 100%;
+      list-style: none;
+    }
+
+    &-link {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 13px;
+
+      &:hover {
+        border-bottom: 1px solid #ffffff;
+      }
+      &--active {
+        color: #43abf0;
+        &:hover {
+          border-bottom: 1px solid #43abf0;
+        }
+      }
+    }
+  }
+}
+
+.mob-menu {
+  height: 0;
+  display: none;
+  @media screen and (max-width: 900px) {
+    display: block;
+  }
+}
+
+#mob-menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.mob-menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center; /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 37px;
+  right: 37px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.mob-menu__btn > span,
+.mob-menu__btn > span::before,
+.mob-menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transition: all ease 0.3s;
+}
+.mob-menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.mob-menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.mob-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: fixed;
+  visibility: hidden;
+  top: 100px;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #10101de5;
+  transition: all ease 0.3s;
+}
+/* элементы меню */
+.mob-menu__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  &:hover {
+    border-bottom: 1px solid #ffffff;
+  }
+  &--active {
+    color: #43abf0;
+    &:hover {
+      border-bottom: 1px solid #43abf0;
+    }
+  }
+}
+
+#mob-menu__toggle:checked ~ .mob-menu__btn > span {
+  transform: rotate(45deg);
+}
+#mob-menu__toggle:checked ~ .mob-menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#mob-menu__toggle:checked ~ .mob-menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#mob-menu__toggle:checked ~ .mob-menu__list {
+  visibility: visible;
+  right: 0;
+}

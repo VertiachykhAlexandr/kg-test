@@ -1,0 +1,87 @@
+.hero-section {
+  width: 100%;
+  height: 850px;
+  background-image: url("../assets/images/office.jpg");
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width: 900px) {
+    height: fit-content;
+  }
+  @media screen and (max-width: 550px) {
+    background-position: revert;
+  }
+  &__inner {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 900px) {
+      padding-top: 120px;
+    }
+  }
+  .hero-section__content {
+    margin-right: 300px;
+    @media screen and (max-width: 900px) {
+      margin-right: 0;
+    }
+  }
+
+  .hero-section__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    max-width: 780px;
+    margin-bottom: 80px;
+    @media screen and (max-width: 900px) {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 42px;
+      max-width: 60%;
+      margin-bottom: 28px;
+    }
+    @media screen and (max-width: 550px) {
+      max-width: 100%;
+    }
+  }
+  .hero-section__description {
+    margin-bottom: 80px;
+    @media screen and (max-width: 900px) {
+      margin-bottom: 28px;
+    }
+
+    &-heading {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      @media screen and (max-width: 900px) {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    }
+    &-list {
+      list-style-type: "-  ";
+      padding-left: 20px;
+    }
+    &-item {
+      font-size: 20px;
+      margin-bottom: 5px;
+      line-height: 24px;
+      @media screen and (max-width: 900px) {
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 30px;
+    @media screen and (max-width: 900px) {
+      margin-bottom: 28px;
+    }
+  }
+}

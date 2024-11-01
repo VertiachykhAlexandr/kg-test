@@ -1,0 +1,57 @@
+@import "header";
+@import "hero-section";
+@import "order-section";
+@import "footer";
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Lato-rus";
+  src: url("../assets/fonts/Lato Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato-rus";
+}
+
+.logo {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.text {
+  text-transform: uppercase;
+  &--blue {
+    color: #43abf0;
+  }
+}
+
+.button {
+  padding: 15px 10px;
+  max-width: 183px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #3e9cdc;
+  border: 1px solid #ffffff;
+  transition: all ease 0.3s;
+  &:hover {
+    background-color: #286690;
+  }
+  &--white {
+    color: #2a2b30;
+    background-color: #ffffff;
+    border: 1px solid #6f6d7b;
+    &:hover {
+      background-color: #dfdfe1;
+    }
+  }
+}

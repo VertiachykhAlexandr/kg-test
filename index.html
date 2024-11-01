@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a class="header__logo logo text" href="/"
+          >LoremIpsum<span class="text--blue">.Net</span></a
+        >
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a
+                class="header__menu-link header__menu-link--active text"
+                href="#"
+                >Бизнес</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link text" href="#">О нас</a>
+            </li>
+
+            <li class="header__menu-item">
+              <a class="header__menu-link text" href="#">Цены</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link text" href="#">Оформить заказ</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="mob-menu">
+          <input id="mob-menu__toggle" type="checkbox" />
+          <label class="mob-menu__btn" for="mob-menu__toggle">
+            <span></span>
+          </label>
+          <ul class="mob-menu__list">
+            <li class="mob-menu__item">
+              <a class="mob-menu__link mob-menu__link--active text" href="#"
+                >Бизнес</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link text" href="#">О нас</a>
+            </li>
+
+            <li class="mob-menu__item">
+              <a class="mob-menu__link text" href="#">Цены</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link text" href="#">Оформить заказ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero-section">
+      <div class="hero-section__inner">
+        <div class="hero-section__content">
+          <h1 class="hero-section__title text">
+            <span class="text--blue">Lorem ipsum</span> dolor sit amet
+            consectetur
+            <span class="text--blue">adipiscing</span>
+          </h1>
+          <div class="hero-section__description">
+            <p class="hero-section__description-heading">
+              At vero eos et accusamus et iusto odio dignissimos ducimus!
+            </p>
+            <ul class="hero-section__description-list">
+              <li class="hero-section__description-item">
+                Totam rem aperiam eaque ipsa
+              </li>
+              <li class="hero-section__description-item">
+                Sit voluptatem accusantium doloremque laudantium
+              </li>
+              <li class="hero-section__description-item">
+                Sed ut perspiciatis, unde omnis iste natus error
+              </li>
+            </ul>
+          </div>
+          <div class="hero-section__buttons">
+            <button class="hero-section__button button text">заказать</button>
+            <button class="hero-section__button button--white button text">
+              подробнее
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order-section">
+      <div class="order-section__inner">
+        <div class="order-section__description">
+          <h2 class="order-section__title text">
+            Оформление <span class="text--blue">Заказа</span>
+          </h2>
+          <p class="order-section__subtitle">
+            Перед заполнением формы ознакомьтесь с нашей схемой работы!
+          </p>
+        </div>
+
+        <div class="scheme">
+          <div class="dots">
+            <div class="dots__item"></div>
+          </div>
+          <div class="scheme__item">
+            <div class="scheme__item-circle">
+              <img
+                src="./assets/images/lookup.png"
+                alt=""
+                class="scheme__item-image"
+              />
+            </div>
+            <p class="scheme__item-text">Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="scheme__item">
+            <div class="scheme__item-circle">
+              <img
+                src="./assets/images/percent.png"
+                alt=""
+                class="scheme__item-image"
+              />
+            </div>
+            <p class="scheme__item-text">Сonsecteturadipiscing elit</p>
+          </div>
+          <div class="scheme__item">
+            <div class="scheme__item-circle">
+              <img
+                src="./assets/images/file.png"
+                alt=""
+                class="scheme__item-image"
+              />
+            </div>
+            <p class="scheme__item-text">Sed do eiusmod tempor</p>
+          </div>
+          <div class="scheme__item">
+            <div class="scheme__item-circle">
+              <img
+                src="./assets/images/mail.png"
+                alt=""
+                class="scheme__item-image"
+              />
+            </div>
+            <p class="scheme__item-text">Esse cillum dolore eu fugiat</p>
+          </div>
+          <div class="scheme__item">
+            <div class="scheme__item-circle">
+              <img
+                src="./assets/images/bill.png"
+                alt=""
+                class="scheme__item-image"
+              />
+            </div>
+            <p class="scheme__item-text">
+              Excepteur sint occaecat cupidatat non proident
+            </p>
+          </div>
+        </div>
+        <form class="form">
+          <div class="form__group">
+            <div class="form__select form__group-item">
+              <input
+                class="form__select-input"
+                type="text"
+                placeholder="Выберите тип системы"
+                readonly
+                id="system"
+                name="system"
+              />
+              <img
+                class="form__select-image"
+                src="./assets/images/arrow-dropdown.png"
+                alt=""
+              />
+              <ul class="form__select-list">
+                <li class="form__select-item">System 1</li>
+                <li class="form__select-item">System 2</li>
+                <li class="form__select-item">System 3</li>
+                <li class="form__select-item">System 4</li>
+                <li class="form__select-item">System 5</li>
+                <li class="form__select-item">System 6</li>
+                <li class="form__select-item">System 7</li>
+                <li class="form__select-item">System 8</li>
+              </ul>
+            </div>
+
+            <input
+              class="form__group-input form__group-item"
+              type="text"
+              placeholder="Ваш e-mail"
+              id="email"
+              name="email"
+            />
+            <input
+              class="form__group-input form__group-item"
+              type="text"
+              placeholder="Ваше имя"
+              id="name"
+              name="name"
+            />
+          </div>
+          <div class="form__group">
+            <div class="form__range">
+              <div class="form__range-text">
+                <div class="form__range-title">
+                  Sed ut perspiciatis, unde omnis iste natus
+                </div>
+                <div class="form__range-value"><span>75</span> %</div>
+              </div>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="75"
+                class="form__range-input"
+                id="range"
+                name="range"
+              />
+            </div>
+            <input
+              class="form__group-file"
+              type="file"
+              id="fileupload"
+              name="fileupload"
+            />
+            <label for="fileupload" class="form__group-item form__group-file">
+              <span><img src="./assets/images/attach.png" alt="" /></span
+              ><span class="text">Прикрепить файл</span>
+            </label>
+          </div>
+          <button type="submit" class="button form__button">ОТПРАВИТЬ</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <p class="footer__item-text">
+            © 2018 <span class="text">«LoremIpsum.net» </span> Все права
+            защищены.
+          </p>
+        </div>
+        <div class="footer__item footer__item">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <img
+                src="./assets/images/kiwi.png"
+                alt=""
+                class="footer__list-image"
+              />
+              <p class="footer__list-text">Qiwi wallet</p>
+            </li>
+            <li class="footer__list-item">
+              <img
+                src="./assets/images/ymoney.png"
+                alt=""
+                class="footer__list-image"
+              />
+              <p class="footer__list-text">Yandex Money</p>
+            </li>
+            <li class="footer__list-item">
+              <img
+                src="./assets/images/wbmoney.png"
+                alt=""
+                class="footer__list-image"
+              />
+              <p class="footer__list-text">Web Money</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <img
+                src="./assets/images/email.png"
+                alt=""
+                class="footer__list-image"
+              />
+              <a href="mailto:info@ipsum228.com" class="footer__list-link"
+                >info@ipsum228.com</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <img
+                src="./assets/images/vk.png"
+                alt=""
+                class="footer__list-image"
+              />
+              <a href="#" class="footer__list-link">Мы вконтакте</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script defer src="./js/index.js"></script>
+  </body>
+</html>
